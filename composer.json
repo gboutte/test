@@ -6,7 +6,7 @@
     },
     "autoload": {
         "psr-4": {
-            "gboutte": "src/",
+            "gboutte": "src/"
         },
         "files": [
             "function.php"
