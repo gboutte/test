@@ -3,5 +3,16 @@
     "description": "A short description of what your package does",
     "require": {
         "php": ">=5.6"
-    }
+    },
+    "autoload": {
+        "psr-4": {
+            "gboutte": "src/",
+        },
+        "files": [
+            "function.php"
+        ],
+        "exclude-from-classmap": [
+            "**/Tests/"
+        ]
+    },
 }
