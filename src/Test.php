@@ -1,7 +1,7 @@
 <?php 
 namespace gboutte;
 class Test{
-	public static debug($message){
+	public static function debug($message){
 	echo "<pre>";
 		var_dump ($message);
 		echo "<pre>";
