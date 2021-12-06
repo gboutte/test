@@ -1,5 +1,5 @@
 <?php 
-namespace gboutte;
+namespace gboutte\Other;
 class Help{
 	public static function go($message){
         echo "<br>HELP<br>";
