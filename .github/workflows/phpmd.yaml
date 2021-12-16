@@ -10,3 +10,8 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: MilesChou/php-tools-action/phpmd@master
+      with:
+      args:
+        - 'src'
+        - 'text'
+        - 'codesize,unusedcode,naming'
