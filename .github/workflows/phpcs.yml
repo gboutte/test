@@ -8,4 +8,8 @@ jobs:
   phpcs:
     runs-on: ubuntu-20.04
     steps:
-    - uses: MilesChou/php-tools-action/phpcs@master
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: MilesChou/php-tools-action/phpcs@master
+        with:
+          args: 'src'
