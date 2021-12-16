@@ -1,0 +1,12 @@
+#https://github.com/marketplace/actions/php-tool-action
+name: phpmetrics
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  phpmetrics:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: MilesChou/php-tools-action/phpmetrics@master

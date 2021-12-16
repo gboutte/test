@@ -1,0 +1,11 @@
+name: PHPCS
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  phpcs:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: MilesChou/php-tools-action/phpcs@master

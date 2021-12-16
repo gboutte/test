@@ -1,0 +1,12 @@
+#https://github.com/marketplace/actions/php-tool-action
+name: phpstan
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  phpstan:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: MilesChou/php-tools-action/phpstan@master
