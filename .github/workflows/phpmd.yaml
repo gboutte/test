@@ -11,7 +11,4 @@ jobs:
     steps:
     - uses: MilesChou/php-tools-action/phpmd@master
       with:
-        args:
-          - 'src'
-          - 'text'
-          - 'codesize,unusedcode,naming'
+        args: 'src text codesize,unusedcode,naming'
