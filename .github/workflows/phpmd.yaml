@@ -9,6 +9,8 @@ jobs:
   phpmd:
     runs-on: ubuntu-20.04
     steps:
-    - uses: MilesChou/php-tools-action/phpmd@master
-      with:
-        args: 'src text codesize,unusedcode,naming'
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: MilesChou/php-tools-action/phpmd@master
+        with:
+          args: 'src text codesize,unusedcode,naming'
